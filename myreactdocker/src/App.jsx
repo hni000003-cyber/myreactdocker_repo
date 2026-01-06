@@ -6,6 +6,16 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const connNode = () => {
+    fetch("http://10.0.20.6:3001")
+    .then(()=>{
+      alert("success")
+    })
+    .catch(()=>{
+      alert("FAIL")
+    })
+  }
+
   return (
     <>
       <div>
